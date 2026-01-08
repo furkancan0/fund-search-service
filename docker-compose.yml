@@ -1,0 +1,38 @@
+name: fund-management-system
+
+services:
+  postgres:
+    image: postgres:16.2
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: fundb
+      POSTGRES_USER: furkan
+      POSTGRES_PASSWORD: furkan
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    networks:
+      - elastic-network
+
+  elasticsearch:
+    image: elasticsearch:8.11.0
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    networks:
+      - elastic-network
+
+volumes:
+  postgres_data:
+  elasticsearch_data:
+
+networks:
+  spring-net:
+    driver: bridge
