@@ -34,5 +34,5 @@ volumes:
   elasticsearch_data:
 
 networks:
-  spring-net:
+  elastic-network:
     driver: bridge
