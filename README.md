@@ -1,7 +1,7 @@
-Fund Search Application 
+### Fund Search Application 
 A Spring Boot 3 application for managing fund data with Excel import, PostgreSQL storage, and Elasticsearch-powered partial search capabilities.  
 
-Import fund data from Excel (.xlsx)  
+### Import fund data from Excel (.xlsx)  
 -Persist data in PostgreSQL  
 -Asynchronous indexing to Elasticsearch  
 -Partial text search using edge n-gram  
@@ -9,7 +9,7 @@ Import fund data from Excel (.xlsx)
 -Sorting and pagination  
 -Reindexing from database to Elasticsearch  
 
-Technologies  
+### Technologies  
 Java 17  
 Spring Boot 3.2.1  
 PostgreSQL - 16.2  
@@ -17,7 +17,7 @@ Elasticsearch 8.11
 Apache POI 5.2.5  
 Docker & Docker Compose
 
-Docker ile Çalıştırma  
+### Docker ile Çalıştırma  
 
 Clone the repository  
 git clone https://github.com/furkancan0/fund-search-service.git  
