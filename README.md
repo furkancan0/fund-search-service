@@ -27,19 +27,19 @@ Fon adına göre arama 1 yıl getiri(%) ile büyükten küçüğe sıralanmış 
 (Pusula portföy)  
 http://localhost:8080/api/funds/searchByName?sortBy=oneYear&sortDir=DESC  
 
-{
-    "name": "pusul",
-    "fundType": "Serbest Şemsiye Fonu",
-    "oneYear": {"min": 20, "max": 100}
-}
+{  
+    "name": "pusul",  
+    "fundType": "Serbest Şemsiye Fonu",  
+    "oneYear": {"min": 20, "max": 100}  
+}  
 
 Fon adına göre arama 3 yıl getiri(%) ile küçükten büyüğe sayfalanmış biçimde.  
 (Kuveyt türk portföy)  
 http://localhost:8080/api/funds/searchByName?sortBy=threeYears&page=1&size=10  
 
-{
-    "name": "kuve"
-}
+{  
+    "name": "kuve"  
+}  
 
 HSBC portföy by code  
 Fon koduna göre arama  
