@@ -19,16 +19,16 @@ Docker & Docker Compose
 
 ### Docker ile Çalıştırma  
 
-Clone the repository  
+Clone the repository:  
 git clone https://github.com/furkancan0/fund-search-service.git  
 cd fund-search-service 
 
-Start PostgreSQL and Elasticsearch  
+Start PostgreSQL and Elasticsearch:  
 docker-compose up -d  
 
 curl http://localhost:9200  
 
-Run Spring Boot application  
+Run Spring Boot application:  
 mvn clean install  
 mvn spring-boot:run  
 
